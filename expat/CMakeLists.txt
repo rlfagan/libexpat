@@ -52,6 +52,16 @@ set(PACKAGE_TARNAME "${PACKAGE_NAME}")
 include(CMakePackageConfigHelpers)
 include(GNUInstallDirs)
 
+execute_process(COMMAND echo 1111111111111111111111111111111111111111111111111)
+execute_process(COMMAND pwd)
+execute_process(COMMAND echo 2222222222222222222222222222222222222222222222222)
+execute_process(COMMAND git rev-parse HEAD)
+execute_process(COMMAND echo 3333333333333333333333333333333333333333333333333)
+execute_process(COMMAND git rev-parse --symbolic-full-name HEAD)
+execute_process(COMMAND echo 4444444444444444444444444444444444444444444444444)
+execute_process(COMMAND sh -c "env | grep GITHUB_ | sort")
+execute_process(COMMAND echo 5555555555555555555555555555555555555555555555555)
+
 #
 # Configuration defaults
 #

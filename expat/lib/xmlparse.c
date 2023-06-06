@@ -1827,6 +1827,7 @@ XML_SetHashSalt(XML_Parser parser, unsigned long hash_salt) {
 
 enum XML_Status XMLCALL
 XML_Parse(XML_Parser parser, const char *s, int len, int isFinal) {
+  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX // revert me, makes the build fail
   if ((parser == NULL) || (len < 0) || ((s == NULL) && (len != 0))) {
     if (parser != NULL)
       parser->m_errorCode = XML_ERROR_INVALID_ARGUMENT;
